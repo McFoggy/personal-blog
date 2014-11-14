@@ -1,0 +1,12 @@
+---
+layout: post
+title: Cleaning strange characters from gradle builds on Travis-CI
+date: '2013-09-19T13:34:00.002+02:00'
+author: Matthieu BROUILLARD
+tags: 
+modified_time: '2013-09-19T13:34:03.839+02:00'
+blogger_id: tag:blogger.com,1999:blog-1656175910479000188.post-2588960585245738760
+blogger_orig_url: http://blog.matthieu.brouillard.fr/2013/09/cleaning-strange-characters-from-gradle.html
+---
+
+<span style="font-family: Verdana,sans-serif;">When performing on <a href="http://travis-ci.org/">Travis-CI</a>, <a href="http://www.gradle.org/">Gradle</a> thinks that the terminal is an ANSI one and thus try to use features non available to the Travis log window:</span><br /><ul><li><span style="font-family: Verdana,sans-serif;">deletion of characrters</span></li><li><span style="font-family: Verdana,sans-serif;">coloring</span></li><li><span style="font-family: Verdana,sans-serif;">...</span></li></ul><span style="font-family: Verdana,sans-serif;">Thus the build log is ugly and even going into the "plain text" version of the log shows strange non printable charcaters.<br /><br />In order to resolve this, you can change the TERM variable by adding in your .travis.yml file:</span><br /><pre>before_install:<br />  - "export TERM=dumb"</pre>

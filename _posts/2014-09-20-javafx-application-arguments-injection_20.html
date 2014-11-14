@@ -1,0 +1,12 @@
+---
+layout: post
+title: JavaFX application arguments injection in afterburner.fx
+date: '2014-09-20T12:28:00.002+02:00'
+author: Matthieu BROUILLARD
+tags: 
+modified_time: '2014-09-20T12:28:39.557+02:00'
+blogger_id: tag:blogger.com,1999:blog-1656175910479000188.post-2712777269369545455
+blogger_orig_url: http://blog.matthieu.brouillard.fr/2014/09/javafx-application-arguments-injection_20.html
+---
+
+If you like JavaFX and the really great <a href="https://github.com/AdamBien/afterburner.fx">afterburner.fx</a> &nbsp;project provided by<a href="http://adam-bien.com/"> Adam Bien</a> &nbsp;then you can use the following little trick to use application arguments.<br /><br />What you just have to do is to tell afterburner that program arguments are considered as a source of configuration, for that modify your main class as follow:<br /><br /><pre class="brush: java">public void start(Stage stage) throws Exception {<br />  // Use application parameters as additional configuration source<br />  Injector.setConfigurationSource(getParameters().getNamed()::get);<br /><br />  ...<br />}</pre><br />Considering that your application uses a ServerConfiguration class managed by afterburner.fx (injected in some presenter for example) as the following<br /><br /><pre class="brush: java">public class ServerConfiguration {<br />  @Inject<br />  private String host;<br /><br />  @Inject<br />  private String port;<br /><br />  ...<br />}</pre>When you launch your application using JavaFX parameters convention<br /><br /><pre>java -jar myapp.jar --host=myserver --port=9090</pre><br />then the ServerConfiguration object instance that will be created by <a href="https://github.com/AdamBien/afterburner.fx">afterburner.fx</a> will have its fields injected with the program arguments values.
