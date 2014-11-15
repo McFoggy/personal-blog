@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog migrated to Github Pages
-date: '2014-15-10T10:00:00.000+01:00'
+date: '2014-11-15T10:00:00.000+01:00'
 author: Matthieu BROUILLARD
 tags: Github Jekyll Blog 
 ---
