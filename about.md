@@ -4,10 +4,13 @@ title: About
 permalink: /about/
 ---
 
-TODO
+My name is Matthieu Brouillard.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am a passionate Java developer since many years.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+In fact I work as "Software architect" at AGFA HCIS near Bordeaux, France.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+But that's not all, I am also acting as University professor at [ENSEIRB](http://www.enseirb-matmeca.fr/), trying to transmit my knowledge & passion of JEE to my students.
+
+And when I am not having fun time with my wife and my two children, I try also to participate in the OSS community.
+
