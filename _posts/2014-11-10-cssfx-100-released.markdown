@@ -3,7 +3,7 @@ layout: post
 title: CSSFX 1.0.0 released !
 date: '2014-11-10T20:34:00.001+01:00'
 author: Matthieu BROUILLARD
-tags: CSSFX 
+tags: CSSFX JavaFX
 ---
 
 Finally, [CSSFX](http://www.fxmisc.org/cssfx) found his way to central, version 1.0.0 is now available.
