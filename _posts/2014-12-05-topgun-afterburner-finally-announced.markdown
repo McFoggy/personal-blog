@@ -1,7 +1,7 @@
 ---
 layout: post
 title: External DI management with Afterburner.FX
-date: '2014-12-09T00:00:00.000+01:00'
+date: '2014-12-05T07:00:00.000+01:00'
 author: Matthieu BROUILLARD
 tags: JavaFX adambien afterburner
 ---
