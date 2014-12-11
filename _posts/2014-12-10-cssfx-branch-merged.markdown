@@ -18,7 +18,7 @@ Now what are the next steps?
 - open enhancements request on ScenicView project
   - enhance [ScenicView documentation](http://fxexperience.com/scenic-view/help/) with CSSFX stuff
   - modify CSSFX to manage removal of CSS (use case is when CSS are pushed/removed to manage theme colors for exemple)
-  - propose ScenicView re-factorings: (tag `ScenicView`)
+  - propose ScenicView re-factorings:
     - introduce a kind of plug-in mechanism (at least clear APIs)
     - change client/modules communication with something like a simple bus with command pattern
     - change poll mechanism (ScenicView looping and asking for modifications every XXX millis) to a push one (monitored applications push interesting changes)
