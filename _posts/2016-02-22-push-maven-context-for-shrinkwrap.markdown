@@ -32,6 +32,7 @@ So you plug the `shrinkwrap-resolver-maven-plugin` that does exactly that
 and you discover that it does not work...
 
 The solution is simple, the plugin populates properties with a namespace which is by default `maven.execution.`, thus filling:
+
 - `maven.execution.user-settings`
 - `maven.execution.global-settings`
 - `maven.execution.pom-file`
