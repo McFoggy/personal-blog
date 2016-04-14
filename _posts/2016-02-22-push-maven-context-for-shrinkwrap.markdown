@@ -13,7 +13,7 @@ If you set manually the settings to use as defined by [shrinkwrap resolvers](htt
 But honestly as we are running our tests with maven, it is easier to let shrinkwrap use the contextual values, isn't it?
 So you plug the `shrinkwrap-resolver-maven-plugin` that does exactly that
 
-```
+~~~~
 <plugin>
     <groupId>org.jboss.shrinkwrap.resolver</groupId>
     <artifactId>shrinkwrap-resolver-maven-plugin</artifactId>
@@ -27,7 +27,7 @@ So you plug the `shrinkwrap-resolver-maven-plugin` that does exactly that
         </execution>
     </executions>
 </plugin>
-```
+~~~~
 
 and you discover that it does not work...
 
@@ -42,7 +42,7 @@ The solution is simple, the plugin populates properties with a namespace which i
 If you change it to what expects shrinkwrap `org.apache.maven.` then everything is fine.
 Final configuration is then
 
-```
+~~~~
 <plugin>
     <groupId>org.jboss.shrinkwrap.resolver</groupId>
     <artifactId>shrinkwrap-resolver-maven-plugin</artifactId>
@@ -59,4 +59,4 @@ Final configuration is then
         </execution>
     </executions>
 </plugin>
-```
+~~~~

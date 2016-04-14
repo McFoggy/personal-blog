@@ -8,11 +8,6 @@ url: "http://blog.matthieu.brouillard.fr" # the base hostname & protocol for you
 twitter_username: alightinthefog
 github_username:  McFoggy
 
-# Build settings
-# markdown: kramdown
-markdown: redcarpet
-# highlighter: rouge
-
 permalink: pretty
 
 exclude: [vendor]

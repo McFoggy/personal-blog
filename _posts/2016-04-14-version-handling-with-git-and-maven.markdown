@@ -21,37 +21,37 @@ Using the following command: `git describe --tags --always --dirty=-dirty`
 
 Having the following history
 
-```
+~~~~
 $ git log  --graph --abbrev-commit --format=format:'%h - %s%d'
 * 2dc72d0 - apply new version scheme for maven-external-version-plugin usage (HEAD)
 * b740eee - add project to source control (tag: 1.0, origin/master)
-```
+~~~~
 
 you will get as output of `git describe --tags --always --dirty=-dirty`: 
 
-```
+~~~~
 1.0-1-g2dc72d0
  ^  ^    ^
  |  |    |- - - -  commit ID (if not on a commit with a tag)
  |  |- - - - - - - number of commits ahead of last found tag (if not on a commit with a tag)
  |- - - - - - - -  value of closest tag found in history, starting from current branch
-```
+~~~~
 
 or if the current checkout points to a commit that has a tag, like the following:
 
-```
+~~~~
 $ git log  --graph --abbrev-commit --format=format:'%h - %s%d'
 * 57d5893 - ignore automatic generated file for maven-external-version execution (HEAD -> master, tag: 1.1)
 * 2dc72d0 - apply new version scheme for maven-external-version-plugin usage
 * b740eee - add project to source control (tag: 1.0, origin/master)
-```
+~~~~
 
 you will get `1.1` as a result
 
-```
+~~~~
 $ git describe --tags --always --dirty=-dirty
 1.1
-```
+~~~~
 
 ## Maven integration
 
@@ -63,7 +63,7 @@ So now by adding the mugin to your POM
 
 you can call `mvn install -Dexternal.version=$(git describe --tags --always --dirty=-dirty)`
 
-```
+~~~~
 $ mvn clean install -Dexternal.version=$(git describe --tags --always --dirty=-dirty)
 [INFO] Scanning for projects...
 [INFO] About to change project version in reactor.
@@ -88,7 +88,7 @@ $ mvn clean install -Dexternal.version=$(git describe --tags --always --dirty=-d
 [INFO] Finished at: 2016-04-14T12:13:06+02:00
 [INFO] Final Memory: 18M/214M
 [INFO] ------------------------------------------------------------------------
-```
+~~~~
 
 ## And now?
 

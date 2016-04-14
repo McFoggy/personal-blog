@@ -8,9 +8,9 @@ tags: java webhook security github jee jaxrs
 
 For a an incoming professional project, I needed to be able to secure `webhooks`.
 To achieve that I published [xhub4j](https://github.com/McFoggy/xhub4j) a library to compute, generate and consume http signature headers [à la github `X-Hub-Signature`](https://developer.github.com/webhooks/#delivery-headers), example of generated header:
-```
+~~~~
 X-Hub-Signature:sha1=fa0902542a12dbf43ef081c0cc4794fd438e172d
-```
+~~~~
 
 The library comes in 3 sub projects depending on your need:
 
