@@ -11,3 +11,5 @@ github_username:  McFoggy
 permalink: pretty
 
 exclude: [vendor]
+
+timezone: Europe/Paris
