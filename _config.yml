@@ -10,6 +10,8 @@ github_username:  McFoggy
 
 permalink: pretty
 
+include: [".well-known"]
+
 exclude: [vendor]
 
 timezone: Europe/Paris
