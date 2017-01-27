@@ -14,11 +14,11 @@ Calling services is as simple as issuing some commands like:
 For development on your local machine there are even cool shortcuts in the syntax
   `http :8080/myapp`
 
-will do a GET http call to http://localhost:8080/myapp
+will do a GET http call to [http://localhost:8080/myapp](http://localhost:8080/myapp)
 
 The syntax is very user friendly, let's remember some usefull:
 
-- headers, use __":"__ ; ``
+- headers, use __":"__
 - query params, use __"=="__
 
 Using the above, calling `http httpbin.org/get X-Blog:header-value exQP==someValue` will result in
