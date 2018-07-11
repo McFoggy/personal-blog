@@ -6,9 +6,9 @@ author: Matthieu BROUILLARD
 tags: jgitver gradle git dsl maven
 ---
 
-Yesterday I released version `0.5.0` of [jgitver grdale plugin](https://github.com/jgitver/gradle-jgitver-plugin) bringing a new DSL functionnality to control branch policies of jgitver.
+Yesterday I released version `0.5.0` of [jgitver gradle plugin](https://github.com/jgitver/gradle-jgitver-plugin) bringing a new DSL functionnality to control branch policies of [jgitver](https://github.com/jgitver/jgitver).
 
-Given a project where people work in feature branch and where releases are performed from master branch, the following gradle configuration would be a perfect match
+For example, given a project where people work in feature branch and where releases are performed from master branch, the following gradle configuration would be a perfect match:
 
 ```groovy
 jgitver {
@@ -23,7 +23,7 @@ jgitver {
 }
 ```
 
-When working in a branch called `feature_Security_Addon` could lead in having project version computed like `1.2.1-3-securityaddon`.
+Working in a branch called `feature_Security_Addon` could lead in having project version computed like `1.2.1-3-securityaddon`.
 
 In above DSL extension, each `policy` closure expects 2 parameters:
 
